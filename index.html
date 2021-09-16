@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title>Black Sabbath Survey</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <h1 id="title"> Black Sabbath Survey Form</h1>
+        <p id="description">Please complate the form, Thank you!</p>
+
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                Name
+                <input type="text" id="name" placeholder="Enter your full name" required/>
+            </label>
+
+            <label for="email" id="email-label">
+                Email
+                <input type="email" id="email" placeholder="Enter your email" required/>
+            </label>
+
+            <label for="number" id="number-label">
+                Age
+                <input type="number" id="number" placeholder="How old are you?" min="16" max="50">
+            </label>
+                <label for="dropdown" id="dropdown-label">
+                    What about the Black Sabbath band in your opinion?
+                    <select id="dropdown">
+                        <option> Very Good </option>
+                        <option> Good </option>
+                        <option> Bad </option>
+                        <option> Very Bad </option>
+                    </select>
+                </label>
+
+                <label for="member" id="member-label">
+                    Who is your favorite member?<br>
+                <input type="radio" name="member" value="1" checked/> Tony Lommi <br>
+                <input type="radio" name="member" value="2"/> Ozzy Osbourne <br>
+                <input type="radio" name="member" value="3" /> Geezer Butler <br>
+                <input type="radio" name="member" value="4" /> Bill Ward <br> 
+                </label>
+
+                <label for="album" id="album-label">
+                    What is your favorite album of Black Sabbath?<br>
+                    <input type="checkbox" value="live-in-paris"/> Live in Paris<br>
+                    <input type="checkbox" value="paranoid-in-new-jersey"/> Paranoid in New Jersey<br>
+                    <input type="checkbox" value="the-end"/> The End<br>
+                    <input type="checkbox" value="the-ten-year-war"/> The Ten Year War<br>
+                    <input type="checkbox" value="the-ultimate-collection"/> The Ultimate Collection<br>
+                </label>
+                <br>
+                <label for="comment" id="comment-label">
+                    Give me your advices, thank you!
+                   <textarea id="comment" cols="30" rows="10">
+                   </textarea>
+                </label>
+
+                <button id="submit" type="submit">Submit</button>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
